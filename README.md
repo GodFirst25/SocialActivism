@@ -1,6 +1,6 @@
 # SocialActivism
 
-This is a website that provides information on How Music Influences Us. 
+This is a webpage that provides little information on How Music Influences Us. 
 
 No matter where we are in life, as an adult, teenager, music has been our way of connection, refelction, and relaxation.
 
@@ -19,3 +19,11 @@ Tools Used:
     - JavaScript is used for the interactivity of the websites be it through form, dark mode, or transition
 
 CSS also include media queries that makes the website responsive and accessible. 
+
+
+Future Implementation
+
+    - Create another page where users can gain more information on how music influences us individually, as students, parents, and even in our profession.
+    - Create another page where users can explore different kinds of music to listen to and provide some information on how each of them influences them either as          youths or adults. 
+    - Provide a page where users can store notes on what they have learned from each page and how they wish to apply them in their lives.
+    - Add a reduce motion button that improves accessiblity and performance.

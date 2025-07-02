@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Effect of Music</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.png" type="image/jpg">
     </head>
     <body>
         <div class="header-container">
@@ -58,7 +59,7 @@
 
         <section id="quiz" class="quiz-section">
             <h2>Short Quiz</h2>
-            <img src="quiz.png" alt="A lady listening to music" class="quiz-image">
+            <img src="Quiz pic.png" alt="A lady listening to music" class="quiz-image">
             <p>Earlier I said "music influences listeners positively or negatively", but how?</p>
             <p><em><strong>How does it influence us?</strong></em></p>
             <br>
@@ -72,22 +73,23 @@
             </ul>
             
             <p>After listening, reflect on:</p>
-            <ul>
+            <ul class="reflection-list">
                 <li>What emotions did the music evoke?</li>
                 <li>Did it remind you of any specific memories or experiences?</li>
                 <li>How did it change your mood or perspective?</li>
             </ul>
             <br>
-            <p>Once you have reflected on these questions, please share your thoughts in the feedback form below.</p>
-            <form id="" title="Feedback Form">
+            <p>Feel free to share your thoughts below:</p>
+            <br>
+            <form id="feedback-form" title="Feedback Form">
                 <label for="feedback"><em>Your Feedback:</em></label>
-                <textarea id="feedback" name="feedback" rows="5" cols="30"></textarea>
+                <textarea id="feedback" name="feedback" rows="5" cols="30" required></textarea>
                 <button type="submit">Submit</button>
             </form>
-            <p>
-                Your feedback is valuable and will help us understand the impact of music on our lives.
-                Thank you for participating!
-            </p>
+
+            <p class="feedback confirmation" id="feedback-msg" style="display: none;">🎉 Thank you for your feedback!</p>
+            <br>
+            <p>Your insights helps us understand music's impact better.</p>
         </section>
 
         <section id="resources">

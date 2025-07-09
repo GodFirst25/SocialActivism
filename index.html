@@ -59,37 +59,56 @@
 
         <section id="quiz" class="quiz-section">
             <h2>Short Quiz</h2>
-            <img src="Quiz pic.png" alt="A lady listening to music" class="quiz-image">
-            <p>Earlier I said "music influences listeners positively or negatively", but how?</p>
-            <p><em><strong>How does it influence us?</strong></em></p>
-            <br>
-            <p>
-                While you ponder on that, please listen to this songs and assess how they make you feel. 
-                If you are in a noisy place, headphones are recommended.
-            </p>
-            <ul class="song-links">
-                <li><a href="https://youtu.be/KIBD1Ir3DOo?si=LS9RnC-uZlXlfH0q" target="_blank">🎵 So Natural</a></li>
-                <li><a href="https://youtu.be/8iDuZv_5MQk?si=smXHzJKehWCxnFxa" target="_blank">🎵 Hills and Valleys</a></li>
-            </ul>
-            
-            <p>After listening, reflect on:</p>
-            <ul class="reflection-list">
-                <li>What emotions did the music evoke?</li>
-                <li>Did it remind you of any specific memories or experiences?</li>
-                <li>How did it change your mood or perspective?</li>
-            </ul>
-            <br>
-            <p>Feel free to share your thoughts below:</p>
-            <br>
-            <form id="feedback-form" title="Feedback Form">
-                <label for="feedback"><em>Your Feedback:</em></label>
-                <textarea id="feedback" name="feedback" rows="5" cols="30" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="quiz-container">
+                <!-- Left content (Text) -->
+                <div class="quiz-text">
+                    <p class="lead">Earlier I said "music influences listeners positively or negatively" - but how?</p>
+                    <br>
+                    <p class="sub-lead"><em><strong>How does it influence us?</strong></em></p>
+                    <br>
+                    <p class="sub-lead">🎧 While you ponder on that, try listening to the songs below. Use headphones for the best experience!</p>
+                </div>
 
-            <p class="feedback confirmation" id="feedback-msg" style="display: none;">🎉 Thank you for your feedback!</p>
+                <!-- Right content (Image) -->
+                <div class="quiz-image-container">
+                    <img src="Quiz pic.png" alt="A lady listening to music" class="quiz-image">
+                </div>
+            </div>
             <br>
-            <p>Your insights helps us understand music's impact better.</p>
+            
+            <!-- Music links as buttons (side-by-side) -->
+            <div class="music-buttons">
+                <a href="https://youtu.be/KIBD1Ir3DOo?si=LS9RnC-uZlXlfH0q" target="_blank" class="music-button">🎵 So Natural</a>
+                <a href="https://youtu.be/8iDuZv_5MQk?si=smXHzJKehWCxnFxa" target="_blank" class="music-button">🎵 Hills and Valleys</a>
+            </div>
+            <br>
+            
+            <!-- Reflection and Feedback form (side-by-side) -->
+            <div class="dual-text">
+                <div class="left-content">
+                     <p class="lead-paragraph">After listening, take a moment to reflect on:</p>
+                    <br>
+                    <ul class="reflection-list">
+                        <li>What emotions did the music evoke?</li>
+                        <li>Did it remind you of any specific memories or experiences?</li>
+                        <li>How did it change your mood or perspective?</li>
+                    </ul>
+                    <br>
+                </div>
+
+                <div class="right-content">
+                    <p class="share-paragraph">📝 Share your thoughts below:</p>
+                    <br>
+                    <form id="feedback-form" title="Feedback Form">
+                        <textarea id="feedback" name="feedback" rows="5" required placeholder="Type your thoughts here..."></textarea>
+                        <br>
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+
+                    <p class="feedback-msg" id="feedback-message" style="display: none;">🎉 Thank you for your feedback!</p>
+                    <br>
+                </div>
+            </div>
         </section>
 
         <section id="resources">

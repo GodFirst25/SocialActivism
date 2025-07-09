@@ -6,17 +6,32 @@ document.body.classList.toggle('dark-mode');
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById("feedback-form");
-    const textarea = document.getElementById("feedback");
-    const msg = document.getElementById("feedback-message");
+    const feedbackField = document.getElementById("feedback");
+    const feedbackMessage = document.getElementById("feedback-message");
     
-    form.addEventListener("submit", e => {
-        e.preventDefault(); // Prevent the form from submitting normally
+    // Handle form submission
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+
+        // Grab the feedback value
+        const feedback = feedbackField.value.trim();
         
-        if (textarea.ariaValueMax.trim().length < 5) {
-            alert("Please provide a more detailed feedback!");
-            return;
+        // Check if feedback has been provided
+        if (feedback.length < 5) {
+            alert("Please provide a more detailed feedback.");
+            return; // Prevent further actions if feedback is too short
         }
-        msg.style.display = "block"; // Show the feedback message
-        textarea.value = ""; 
+        
+        // Save feedback to localStorage or perform additional actions if needed
+        const savedFeedback = JSON.parse(localStorage.getItem("musicFeedbackList")) || [];
+        localStorage.setItem("musicFeedbackList", JSON.stringify(savedFeedback));
+
+        // Show the "Thank you" message
+        feedbackMessage.style.display = "block";
+
+        // Hide the "Thank you" message after 5 seconds
+        setTimeout(() => {
+            feedbackMessage.style.display = "none";
+        }, 5000);
     });
 });

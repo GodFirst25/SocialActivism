@@ -289,6 +289,106 @@ body {
     text-align: center;
 }
 
+.resources-section {
+    background-color: #f3f5f9;
+    color: black;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.resources-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.resource-text {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resource-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.resource-list li {
+    font-size: 1rem;
+    margin: 12px 0;
+    padding-left: 24px;
+    position: relative;
+}
+
+.resource-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+.learn-more {
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+.resource-button {
+    display: inline-block;
+    margin: 12px 8px;
+    padding: 10px 20px;
+    background-color: #4b0082;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.resource-button:hover {
+    background-color: #6a0dad;
+}
+
+.music-footer {
+    background-color:#4b0082;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    border-top: 4px solid #6a0dad;
+}
+
+.music-footer .footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #dcd0ff;
+}
+
 @media (max-width: 768px) {
     .intro-section {
         flex-direction: column;
@@ -333,5 +433,21 @@ body {
 
     #feedback-form button {
         align-self: center;
+    }
+
+    .resource-list li {
+        margin: 8px 0;
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .resources-section {
+        padding: 30px 15px; /* Reduce padding on smaller screens */
+    }
+
+    .rsource-button {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 8px auto; /* Center buttons on smaller screens */
     }
 }
